@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #cccccc;
+  color: #333333;
+  font-size: 15px;
+  line-height: 2;
+}
+
+p,h1,h2,h3,h4,h5,h6{
+  margin-top: 0;
+}
+
+/*画像の下部の余白をなくす*/
+img {
+  vertical-align: bottom;
+}
+
+/*リスト項目の余白をなくす*/
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #3583aa;
+/*  通常の時は下線部を表示しない*/
+  text-decoration: none;
+}
+
+a:visited {
+  color: #788d98;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  width: 960px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+/* MIYAKAWA表示 */
+#index h2 {
+  font-size: 100px;
+  line-height: 0.5;
+  color: yellow;
+  font-family: 'Bitter', serif;
+  float: left;
+}
+
+#about h3 {
+  font-size: 100px;
+  line-height: 0.5;
+  color: yellow;
+  font-family: 'Bitter', serif;
+  float: left;
+}
+
+/*画像*/
+.logo {
+  float: left;
+  margin-top: 50px;
+}
+
+/*メニュー*/
+.global-nav {
+  float: right;
+  margin-top: 60px;
+}
+
+.global-nav li {
+  float: left;
+  margin: 0 20px;
+  font-size: 20px;
+  list-style: none;
+  font-family: 'Bitter', serif;
+}
+
+.global-nav li a {
+  color: #ffffff;
+}
+
+.global-nav li a:hover {
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 3px;
+  text-decoration: none;
+}
+
+/*floatプロパティで指定された要素の回り込みを解除する*/
+#wrap {
+  clear: both;
+  background-color: #ffffff;
+  margin-top: 220px;
+  padding: 35px 0;
+}
+
+.content {
+  width: 960px;
+  margin: 0 auto;
+}
+
+footer {
+  text-align: center;
+  color: #ffffff;
+  padding: 20px 0;
+}
+
+footer small {
+  font-size: 12px;
+}
+
+#about {
+  background-image: url(../Images/sample_image4.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: 100% auto;
+}
+
+.main-center {
+  width: 940px;
+  margin: 0 auto;
+}
+
+
+
