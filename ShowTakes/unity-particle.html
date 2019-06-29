@@ -1,0 +1,167 @@
+<!-- トップページにしたいページのファイル名は"index.html"にする -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">    
+<title>ShowTakes</title>
+<!-- フォントの設定 -->
+  <link href="https://fonts.googleapis.com/css?family=Bitter:400,700" rel="stylesheet">
+<!--  CSSファイルとHTMLファイルをリンクさせる　-->
+  <link href="css/unity-particle.css" rel="stylesheet">
+</head>
+
+<body id="unity-particle">
+<!------  ヘッダー  ------>
+    <header>
+        <div class="logo">
+            <!-- 画像にリンク作成 -->
+            <h1>アプリゲーム開発部</h1>
+            <h2>ShowTakes</h2>
+            <h5>更新日：2019/06/22</h5>
+        </div>
+<!------  メニュー  ------>
+        <nav>
+            <ul id="menu">
+                <!-- リンク作成 -->
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="unity.html" class="home">Unity</a></li>
+                <li><a href="blender.html">Blender</a></li>    
+                <li><a href="git.html">Git</a></li>    
+                <li><a href="contact.html">お問い合わせ</a></li>    
+            </ul>
+        </nav>
+    </header>
+<!------  コンテンツ  ------>
+    <div id="wrap">
+        <div id="content">
+            <div class="main">
+                <p><h7 class="icon">見方の説明</h7></p>
+                <br>
+                <br>ここでは、パーティクルの基礎を説明します。
+                <br>まず、パーティクルを表示してみよう。
+                <br><img src="images/image6.png" alt="image6">
+                <br>
+                <br>[Hierarchy]ビュー内で右クリックし、Effect ▶︎ Particle System を選択
+                <br>すると以下の画面のようなパーティクルと[Inspector]ビューが表示される。
+                <br><img src="images/image5.png" alt="image5">
+                <br>
+                <br><h7 class="icon2">Inspectorビューについての説明</h7>
+                <br>&nbsp;&nbsp;
+                <br><h8>パーティクルシステムモジュール</h8>
+                <br><img src="images/image9.png" alt="image9">
+                <br>&nbsp;&nbsp;
+                <section class="propaty">
+                    <table border="1">
+                        <caption>パーティクルシステムモジュールのプロパティ説明</caption>
+                        <tr class="top">
+                            <th >プロパティ</th>
+                            <td >特徴</td>
+                        </tr>
+                        <tr>
+                            <th>Duration</th>
+                            <td>システムが動作する時間の長さ</td>
+                        </tr>
+                        <tr>
+                            <th class="direction">Looped</th>
+                            <td>有効であれば,システムは Duration の時間の終了時に再び始まり,サイクルを繰り返し続けます。</td>
+                        </tr>
+                        <tr>
+                            <th class="direction">Prewarm</th>
+                            <td>有効であれば,システムが既にサイクルを完全に完了していても初期化されます。（ Looping 有効時のみ動作します）</td>
+                        </tr>
+                        <tr>
+                            <th>Start Delay</th>
+                            <td>有効化されて,システムがパーティクルの放出を始める前にある秒単位の遅延</td>
+                        </tr>
+                        <tr>
+                            <th>Start Lifetime</th>
+                            <td>パーティクルの初期の生存期間</td>
+                        </tr>
+                        <tr>
+                            <th>Start Speed</th>
+                            <td>特定の方向へのそれぞれのパーティクルの初速</td>
+                        </tr>
+                        <tr>
+                            <th>Start Size</th>
+                            <td>それぞれのパーティクルの初期の大きさ</td>
+                        </tr>
+                        <tr>
+                            <th>Start Rotation</th>
+                            <td>それぞれのパーティクルの初期の角度</td>
+                        </tr>
+                        <tr>
+                            <th>Start Color</th>
+                            <td>それぞれのパーティクルの初期の色</td>
+                        </tr>
+                        <tr>
+                            <th>Gravity Multiplier</th>
+                            <td>物理マネージャーで設定されている重力値の大きさ。値が0ならば無重力になる。</td>
+                        </tr>
+                        <tr>
+                            <th>Inherit Velocity</th>
+                            <td>パーティクルをパーティクルシステムを持つオブジェクトと同じ速度で開始する</td>
+                        </tr>
+                        <tr>
+                            <th class="direction">Simulation Space</th>
+                            <td>パーティクルを親オブジェクトのローカル座標で動かすか（そして,その場合は親オブジェクトと共に動く）,ワールド座標で動かすか</td>
+                        </tr>
+                        <tr>
+                            <th>Play on Awake</th>
+                            <td>オブジェクトが生成された時にシステムを自動で動かすか</td>
+                        </tr>
+                        <tr>
+                            <th class="direction">Max Particles</th>
+                            <td>そのシステムの中で,一度に存在できるパーティクルの最大数を決める。前に生成されていたパ ーティクルは限界数に到達すると削除される</td>
+                        </tr>
+                    </table>
+                </section>
+                <br>&nbsp;&nbsp;
+                <br>以上です
+                <br>次は細かく説明していくよ！
+                <!--        ボタン        -->
+                <p class="btn now left"><a>前のページ </a></p>
+                <p class="btn now"><a>1</a></p>
+                <p class="btn"><a href="unity-particle2.html">2</a></p>
+                <p class="btn"><a href="unity-particle3.html">3</a></p>
+                <p class="btn"><a href="unity-particle2.html">次のページ</a></p>
+            </div>
+<!--            <aside class="sidebar">-->
+<!--                <section>-->
+<!--                    <h7>Unity</h7>-->
+<!--                    <ul>-->
+<!--                        <li><a href="unity.html#1">1</a></li>-->
+<!--                        <li><a href="unity.html#2">2</a></li>-->
+<!--                    </ul>-->
+<!--                </section>-->
+<!--            </aside>-->
+        </div>
+    </div>
+<!------  ヘッター1  ------>
+    <article>
+        <footer>
+            <div class="ft">
+                <h3>アプリゲーム開発部</h3>
+                <h4>ShowTakes</h4>
+            </div>
+            <ul id="footer-menu">
+                <!-- リンク作成 -->
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="unity.html">Unity</a></li>
+                <li><a href="blender.html">Blender</a></li>    
+                <li><a href="git.html">Git</a></li>    
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </footer>
+    </article>
+<!------  ヘッター2  ------>
+    <footer>
+        <small>ShowTakes</small>
+        <ul id="footer-menu2">
+          <li><a href="">ヘルプ</a></li>
+          <li><a href="">プライバシー</a></li>
+          <li><a href="">利用規約</a></li>    
+        </ul>
+    </footer>
+  
+</body>
+</html>

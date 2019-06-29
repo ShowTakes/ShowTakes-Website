@@ -1,42 +1,82 @@
+<!-- トップページにしたいページのファイル名は"index.html"にする -->
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">    
-<title>風景写真家「Offical Website」</title>
-　<!--  CSSファイルとHTMLファイルをリンクさせる　-->
+<title>ShowTakes</title>
+<!-- フォントの設定 -->
   <link href="https://fonts.googleapis.com/css?family=Bitter:400,700" rel="stylesheet">
-  <link href="css/common.css" rel="stylesheet">
+<!--  CSSファイルとHTMLファイルをリンクさせる　-->
+  <link href="css/index.css" rel="stylesheet">
 </head>
 
 <body id="index">
+<!------  ヘッダー  ------>
     <header>
         <div class="logo">
-            <a href="index.html"><h2>ShowTakes</h2></a>
-<!-- <a href="index.html "><img src="Images/sample_image.png" alt="SAMPLE"></a> -->
+            <!-- 画像にリンク作成 -->
+            <h1>アプリゲーム開発部</h1>
+            <h2>ShowTakes</h2>
+            <h5>更新日：2019/06/22</h5>
         </div>
+<!------  メニュー  ------>
         <nav>
-            <ul class="global-nav">
-                <li><a href="portfolio.html">Porfolio</a></li>    
-                <li><a href="about.html">About</a></li>    
-                <li><a href="contact.html">Contact</a></li>    
+            <ul id="menu">
+                <!-- リンク作成 -->
+                <li><a href="index.html" class="home">ホーム</a></li>
+                <li><a href="unity.html">Unity</a></li>
+                <li><a href="blender.html">Blender</a></li>    
+                <li><a href="git.html">Git</a></li>    
+                <li><a href="contact.html">お問い合わせ</a></li>    
             </ul>
         </nav>
     </header>
-  
+<!------  コンテンツ  ------>
     <div id="wrap">
         <div id="content">
-          <!--     見出し文字     -->
-          <h1>Life is beautiful, Snap!Snap!</h1>
-          <!--     本文     -->
-          <p>このWebサイトは、学習用サンプルとして作成する「SNAPPERS」を言う架空の写真家のポートフォリオです。<br>チュートリアル形式でHTMLとCSSを学びながら完成を目指します。楽しんで作成しましょう。</p>
-          <!--     ボタンの文字列作成     -->
-          <p class="btn"><a href="Portfolio.html">My Portfolio</a></p>
+            <section id="unity">
+                <h7 class="icon">Unity</h7>
+                <h7 class="image-unity"><img src="images/unity.png" ait="unity"></h7>
+                <p>Unityは、統合開発環境を内蔵し、複数の機材に対応するゲームエンジンである。開発はユニティ・テクノロジーズ。日本法人はユニティテクノロジーズジャパン合同会社。ウェブプラグイン、デスクトッププラットフォーム、ゲーム機、携帯機器向けのコンピュータゲームを開発するために用いる。100万人以上の開発者が利用している。<br><a href="unity.html">詳しくみる >></a></p>
+            </section>
+            <section id="blender">
+                <h8 class="icon">Blender</h8>
+                <h8 class="image-blender"><img src="images/blender.png" ait="unity"></h8>
+                <p>Blenderとはオープンソースの3次元コンピュータグラフィックスソフトウェアの一つで3Dモデルの作成、レンダリングのほかアニメーション、コンポジット機能も備える。<br><a href="blender.html">詳しくみる >></a></p>
+            </section>
+            <section id="git">
+                <h9 class="icon">Git</h9>
+                <h9><img src="images/git.png" ait="unity"></h9>
+                <p>Gitは、プログラムのソースコードなどの変更履歴を記録・追跡するための分散型バージョン管理システムである。Linuxカーネルのソースコード管理に用いるためにリーナス・トーバルズによって開発され、それ以降ほかの多くのプロジェクトで採用されている。<br><a href="git.html">詳しくみる >></a></p>
+            </section>
         </div>
     </div>
-    
+<!------  ヘッター1  ------>
+    <article>
+        <footer>
+            <div class="ft">
+                <h3>アプリゲーム開発部</h3>
+                <h4>ShowTakes</h4>
+            </div>
+            <ul id="footer-menu">
+                <!-- リンク作成 -->
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="unity.html">Unity</a></li>
+                <li><a href="blender.html">Blender</a></li>    
+                <li><a href="git.html">Git</a></li>    
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </footer>
+    </article>
+<!------  ヘッター2  ------>
     <footer>
-        <small>(C)2019 0601.</small>    
+        <small>ShowTakes</small>
+        <ul id="footer-menu2">
+          <li><a href="">ヘルプ</a></li>
+          <li><a href="">プライバシー</a></li>
+          <li><a href="">利用規約</a></li>    
+        </ul>
     </footer>
-
+  
 </body>
 </html>
