@@ -7,9 +7,10 @@
     background-repeat: no-repeat;
     background-position: center top;
 /*  background-attachment: fixed;*/
-    background-size: 65% 35%;
-    width: 940px;
+/*    background-size: 65% 35%;*/
+/*    width: 940px;*/
     margin: auto;
+    background-color: #EEEEEE;
 }
 
 /* 現在いるページを示す */
@@ -40,97 +41,189 @@ h5 {
 }
 
 /* ---------- メニュー ---------- */
-
-#menu {
-    width:940px;
-    padding:0;
-    margin:0;
+/* ---------- メニュー_解読------------------------------------------------------------ */
+.menu {
+    position: relative;
+    height: 50px;
     list-style-type: none;
+    float: left;
+    background-color: black;
+    padding: 0px 44px;
 }
 
-#menu li {
-    width:20%;
-    float:left;
-    padding:0;
-    margin:0;
-    text-align:center;
+/* 文字の位置 */
+.menu > li {
+    height: 50px;
+    line-height: 50px;
 }
 
-#menu li a {
-    width:auto;
-    color:#ffffff;
-    font-size:12px;
-    font-weight:bold;
-    padding:20px 0;
-    text-decoration:none;
-    display:block;
-    background: #00000f;
+/* 文字 */
+.menu > li a {
+    display: block;
+    color: #fff;
+    text-decoration-line: none;
 }
 
-#menu li a:hover {
-    color: darkgrey;
+/*  カーソルを合わせた時にグレーに変える */
+.menu > li a:hover {
+    color: #999;
+    text-decoration-line:underline;
 }
 
+ul.menu__second-level {
+/*    visibility: hidden;*/
+    opacity: 0;
+    z-index: 1;
+}
+
+.menu > li:hover {
+    background: black;
+/*    -webkit-transition: all .5s;*/
+/*    transition: all .5s;*/
+}
+
+/* ドロップダウンの境目の線 */
+.menu__second-level li {
+    border-top: 1px solid #111;
+}
+
+.menu__third-level li {
+/*    border-top: 1px solid #111;*/
+}
+
+.menu__second-level li a:hover {
+/*    background: #111;*/
+}
+
+/* 下矢印 */
+.init-bottom:after {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 0 0 0 15px;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+}
+
+/* floatクリア */
+.menu:before,
+.menu:after {
+/*    content: " ";*/
+/*    display: table;*/
+}
+
+.menu:after {
+/*    clear: both;*/
+}
+
+.menu {
+/*    *zoom: 1;*/
+}
+.menu > li.menu__single {
+    position: relative;
+}
+
+li.menu__single ul.menu__second-level {
+    padding-left: 10px;
+    position: absolute;
+    top: 40px;
+    width:120px;
+    background: black;
+    list-style-type: none;
+/*    -webkit-transition: all .2s ease;*/
+/*    transition: all .2s ease;*/
+}
+
+li.menu__single:hover ul.menu__second-level {
+    top: 50px;
+    visibility: visible;
+    opacity: 1;
+}
+/* ---------- メニュー ------------------------------------------------------------ */
 /* ---------- コンテンツ ---------- */
 
 /*floatプロパティで指定された要素の回り込みを解除する*/
 #wrap {
     clear: both;
     /* 背景を白色にしている */
-    background-color: #ffffff;
     margin-top: 0px;
     padding: 10px 0;
 }
 
 #content {
+    float:left;
     font-size: 20px;
-    width: auto;
-    margin: 50px 0px 1200px;
+    margin: 50px 0px 10px 100px;
 }
 
 .icon  {
     content: "";
-    padding-left: 10px;
-    border-left: 8px solid #9cd4a4;
+    padding-left: 20px;
+    border-left: 20px solid black;
+    border-bottom: 2px solid black;
+    padding-right: 100px;
 }
 
 #unity p {
     width: 500px;
-    float: right;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border: 1px solid black;
     margin-bottom: 100px;
-}
-
-h7 {
-    clear: both;
-    float: left;
-    padding: 10px;
-    padding-top: 20px
 }
 
 #blender p {
     width: 500px;
-    float: right;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border: 1px solid black;
     margin-bottom: 100px;
-}
-
-h8 {
-    clear: both;
-    float: left;
-    padding: 10px;
-    margin-bottom: 20px;
 }
 
 #git p {
     width: 500px;
-    float: right;
-    margin-bottom:0px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    margin-bottom: 100px;
 }
 
-h9 {
-    clear: both;
-    float: left;
-    padding: 10px;
-    margin-bottom: 20px;
+h7 {
+    padding: 10px 0px;
+    font-size:30px;
+    font-family: 'Bitter', serif;
+}
+
+
+/* ---------- サイドバー ---------- */
+
+.sidebar {
+    width: 500px;
+    float:right;
+    padding: 70px 30px;
+    margin: 30px 0px;
+    margin-right: 50px;
+    background-color: #ffffff;
+    font-size: 20px;
+    list-style-type: none;
+    border: 1px solid black;
+}
+
+.sidebar h12 {
+    font-family: 'Bitter', serif;
+    text-align: center;
+    background-color: #ffffff;
+    font-size: 40px;
+    padding-left: 150px;
+}
+
+.sidebar p {
+    font-size: 20px;
+    
 }
 
 /* ---------- フッター ---------- */
@@ -149,25 +242,23 @@ h3 {
 }
 
 h4 {
-    font-size: 20px;
+    font-size: 40px;
     font-family: 'Bitter', serif;
-    clear: both;
 }
 
 /* ---------- フッター　メニュー1 ---------- */
 
 article #footer-menu {
-    width:auto;
-    padding:auto;
-    margin:auto;
+    clear: both;
     list-style-type: none;
+    clear: both;
 }
 
 article #footer-menu li {
     width:auto;
     float: left;
     padding:0px 30px;
-    margin:0px 20px 0px 0px;
+    margin:0px 0px 0px 0px;
     text-align:center;
 }
 
@@ -183,11 +274,12 @@ article #footer-menu li a:hover {
 }
 
 article footer {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    clear: both;
     text-align: center;
     color: #ffffff;
-    padding: 100px 0px;
+    padding: 70px 50px;
+    border: 1px solid black;
+    margin: 20px 100px;
 }
 
 /* ---------- フッター　メニュー2 ---------- */
@@ -195,38 +287,13 @@ article footer {
 
 small {
     clear: both;
-    padding: 30px 0px 30px 10px;
-    float: left;
+    padding: 10px 100px 10px 0px;
+    float: right;
     color: black;
     font-size: 20px;
     font-family: 'Bitter', serif;
 }
 
-#footer-menu2 {
-    padding: 30px 0px 10px 400px;
-    margin:0px 0px 0px 0px;
-    list-style-type: none;
-}
-
-#footer-menu2 li {
-    width:auto;
-    float: left;
-    padding: 0px 30px;
-    margin:0px 0px 0px 0px;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    border-collapse: collapse;
-}
-
-#footer-menu2 li a {
-    color:black;
-    font-size:14px;
-    text-decoration:none;
-}
-
-#footer-menu2 li a:hover {
-    text-decoration:underline;
-}
 
 
 
