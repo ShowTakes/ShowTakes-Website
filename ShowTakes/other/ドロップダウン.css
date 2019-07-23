@@ -29,7 +29,7 @@ h1 {
 /* ShowTakes */
 h2 {
     font-size: 90px;
-    margin: -10px 0px 0px 20px;
+    margin: -10px 0px 0px 0px;
     color: dodgerblue;
     font-family: 'Bitter', serif;
     color: #000;
@@ -45,9 +45,8 @@ h2 {
     list-style-type: none;
     float: left;
     background-color: black;
-    padding: 0.5% 3.3%;
-    width: 5.9%;
-    border-bottom: 7px solid #808080;
+    padding: 0 3.2%;
+    width: 5.9%
 }
 
 .menu_all {
@@ -58,7 +57,7 @@ h2 {
 .menu > li {
     height: 50px;
     line-height: 50px;
-    width: 130px;
+    width: 120px;
     text-align: center;
 }
 
@@ -71,10 +70,8 @@ h2 {
 
 /*  カーソルを合わせた時にグレーに変える */
 .menu > li a:hover {
-/*    color: #999;*/
-/*    text-decoration-line:underline;*/
-    display: block;
-    background-color: #808080;
+    color: #999;
+    text-decoration-line:underline;
 }
 
 ul.menu__second-level {
@@ -120,19 +117,8 @@ ul.menu__second-level {
     position: relative;
 }
 
-li.menu__single {
-    padding: 0.5px;
-    position: absolute;
-    top: 0px;
-    background: black;
-    list-style-type: none;
-    -webkit-transition: all .2s ease;
-    transition: all .2s ease;
-    text-align: center;
-}
-
-ul.menu__second-level {
-    padding:0px 0px 0px 10px;
+li.menu__single ul.menu__second-level {
+    padding-left: 0px;
     position: absolute;
     top: 0px;
     width:100%;
@@ -140,50 +126,34 @@ ul.menu__second-level {
     list-style-type: none;
     -webkit-transition: all .2s ease;
     transition: all .2s ease;
-    float: left;
-    text-align: left;
+    text-align: center;
 }
 
-
-
-li.menu__single ul.menu__second-level {
+li.menu__single:hover ul.menu__second-level {
     top: 50px;
     visibility: visible;
     opacity: 1;
 }
-
-h20 {
-    font-size:10px;
-}
-
-.now {
-    background-color: #808080;
-    padding-bottom: 7px;
-    border-bottom: 2px solid #808080;
-}
-
 /* ---------- メニュー ------------------------------------------------------------ */
 /* ---------- コンテンツ ---------- */
 
 /*floatプロパティで指定された要素の回り込みを解除する*/
 #wrap {
-    float: left;
+    clear: both;
     /* 背景を白色にしている */
-    margin-top: 150px;
-    padding: 0px 10px;
+    margin-top: 0px;
+    padding: 10px 0;
 }
 
 #content {
-    width: 60%;
-    float: left;
+    float:left;
     font-size: 20px;
-    margin: 0px 0px 10px 0px;
-    margin-left: 5%;
-    
+    margin: 20px 0px 10px 40px;
 }
 
 #content p {
-    padding: 10px 100px 100px 100px;
+    width: 750px;
+    padding: 10px 40px 100px 40px;
     background-color: #ffffff;
     border: 1px solid #000044;
     margin-bottom: 100px;
@@ -193,42 +163,44 @@ h20 {
 h7 {
     font-size:40px;
     font-family: 'Bitter', serif;
-    margin-left: 30%;
+    margin-left: 280px;
+    border-bottom: 3px solid black;
 }
 
 h8 {
     font-size:40px;
     font-family: 'Bitter', serif;
-    margin-left:30%;
+    margin-left:320px;
+    border-bottom: 3px solid black;
 }
 
 h14 {
-    padding: 10% 0 0 35%;
+    padding: 30px 0px 0px 30px;
+    float: right;
 }
 
 #content img {
-    margin:0px 0px 0px 100px;
-    width: 70%;
+    margin:0px 0px 0px 20px;
 }
 
 /* ---------- サイドバー ---------- */
 
 .sidebar {
-    float: right;
-    width: 20%;
-    padding: 40px 30px;
-    margin-right: 4%;
+    width: 300px;
+    float:right;
+    padding: 50px 40px;
+    margin: 40px 0px;
+    margin-right: 50px;
     background-color: #ffffff;
     font-size: 20px;
     list-style-type: none;
     border: 1px solid black;
-    margin-top: 20px;
 }
 
 .introduction h13 {
     font-family: 'Bitter', serif;
     font-size: 20px;
-    padding: 0px;
+    padding: 0px 0px;
 }
 
 .introduction h12 {
@@ -257,46 +229,21 @@ h14 {
     background-color: #9999;
     margin-bottom: 10px;
     text-align: center;
-    width: 80%;
+    width: 80
 }
 
+.sns {
+    
+}
 
 .icon3 {
     content: "";
     margin-top: 50px;
-    padding-left: 0px;
+    padding-left: 20px;
     border-left: 20px solid black;
     border-bottom: 2px solid black;
     font-size: 17px;
     padding: 5px 0px 0px 10px;
-}
-
-/* ---------- サイドバー２ ---------- */
-
-.sidebar2 {
-    float: right;
-    width: 20%;
-    padding: 40px 30px;
-    margin-right: 4%;
-    background-color: #ffffff;
-    font-size: 20px;
-    list-style-type: none;
-    border: 1px solid black;
-    margin-top: 6%;
-}
-
-.side2 {
-    text-align: center;
-    font-size: 50px;
-    border: 1px solid black;
-    padding: 50px 0px;;
-    margin: 0 auto;
-}
-
-.non {
-    text-align: center;
-    font-size: 30px;
-    margin-top: 0;
 }
 
 
@@ -329,6 +276,7 @@ img {
     clear: both;
     list-style-type: none;
     border: 1px solid black;
+    width: 20%;
 }
 
 #footer-menu li {
@@ -350,24 +298,20 @@ article footer {
     clear: both;
     text-align: center;
     color: #ffffff;
-    padding: 3% 2% 8% 2%;
+    padding: 70px 50px 110px 50px;
     border: 1px solid black;
-    margin: 0.5% 4%;
+    margin: 20px 100px;
 }
 
 .table {
-    font-size: 85%;
-    width: 1%;
-    padding-bottom: 10px;
+    font-size: 15px;
+    padding: 10px 19px;
+    
 }
 
 table {
     color: black;
-}
-
-table td {
-    font-size: 80%;
-    padding-bottom: 10px;
+    
 }
 
 /* ---------- フッター　メニュー2 ---------- */

@@ -20,71 +20,169 @@
         </div>
 <!------  メニュー  ------>
         <nav>
+            <ul class="menu_all">
             <ul class="menu">
                 <li class="menu__single">
-                    <a href="#" class="init-bottom">HOME</a>
+                    <a href="#" class="init-bottom, now">HOME</a>
                 </li>
             </ul>
             <ul class="menu">
                 <li class="menu__single">
-                    <a href="#" class="init-bottom">Webサイト</a>
-                    <ul class="menu__second-level">
-                        <li><a href="#">・HTML</a></li>
-                        <li><a href="#">・CSS</a></li>
-                        <li><a href="#">・PHP</a></li>
-                        <li><a href="#">・WordPress</a></li>
-                    </ul>
+                    <div onclick="obj1=document.getElementById('open1').style;
+                    obj1.display=(obj1.display=='none')?'block':'none',
+                    obj2.display='none',
+                    obj3.display='none',
+                    obj4.display='none',
+                    obj5.display='none',
+                    obj6.display='none',
+                    obj7.display='none';">
+                        <a style="cursor:pointer;">
+                            <a href="#" class="init-bottom">Webサイト&nbsp;<h20>▽</h20></a>
+                        </a>
+                    </div>
+                    <div id="open1" style="display:none;">
+                        <ul class="menu__second-level">
+                            <li><a href="#">&nbsp;HTML</a></li>
+                            <li><a href="#">&nbsp;CSS</a></li>
+                            <li><a href="#">&nbsp;PHP</a></li>
+                            <li><a href="#">&nbsp;WordPress</a></li>
+                        </ul>
+                    </div>
                 </li>
             </ul>
+                
             <ul class="menu">
                 <li class="menu__single">
-                    <a href="#" class="init-bottom">プログラミング</a>
-                    <ul class="menu__second-level">
-                        <li><a href="#">・C言語</a></li>
-                        <li><a href="#">・C#</a></li>
-                        <li><a href="#">・Swift</a></li>
-                    </ul>
+                    <div onclick="obj2=document.getElementById('open2').style;
+                    obj2.display=(obj2.display=='none')?'block':'none',
+                    obj1.display='none',
+                    obj3.display='none',
+                    obj4.display='none',
+                    obj5.display='none',
+                    obj6.display='none',
+                    obj7.display='none';">
+                        <a style="cursor:pointer;">
+                            <a href="#" class="init-bottom">プログラミング&nbsp;<h20>▽</h20></a>
+                        </a>
+                    </div>
+                    <div id="open2" style="display:none;">
+                        <ul class="menu__second-level">
+                            <li><a href="#">&nbsp;C言語</a></li>
+                            <li><a href="#">&nbsp;C#</a></li>
+                        </ul>
+                    </div>
                 </li>
             </ul>
+                
             <ul class="menu">
                 <li class="menu__single">
-                    <a href="#" class="init-bottom">管理</a>
-                    <ul class="menu__second-level">
-                        <li><a href="#">・GIT</a></li>
-                    </ul>
+                    <div onclick="obj3=document.getElementById('open3').style;
+                    obj3.display=(obj3.display=='none')?'block':'none',
+                    obj1.display='none',
+                    obj2.display='none',
+                    obj4.display='none',
+                    obj5.display='none',
+                    obj6.display='none',
+                    obj7.display='none';">
+                        <a style="cursor:pointer;">
+                            <a href="#" class="init-bottom">管理&nbsp;<h20>▽</h20></a>
+                        </a>
+                    </div>
+                    <div id="open3" style="display:none;">    
+                        <ul class="menu__second-level">
+                            <li><a href="#">&nbsp;GIT</a></li>
+                        </ul>
+                    </div>
                 </li>
             </ul>
+                
             <ul class="menu">
                 <li class="menu__single">
-                    <a href="#" class="init-bottom">ソフト</a>
-                    <ul class="menu__second-level">
-                        <li><a href="#">・Unity</a></li>
-                        <li><a href="#">・Xcode</a></li>
-                    </ul>
+                    <div onclick="obj4=document.getElementById('open4').style;
+                    obj4.display=(obj4.display=='none')?'block':'none',
+                    obj1.display='none',
+                    obj2.display='none',
+                    obj3.display='none',
+                    obj5.display='none',
+                    obj6.display='none',
+                    obj7.display='none';">
+                        <a style="cursor:pointer;">
+                            <a href="#" class="init-bottom">ソフト&nbsp;<h20>▽</h20></a>
+                        </a>
+                    </div>
+                    <div id="open4" style="display:none;">    
+                        <ul class="menu__second-level">
+                            <li><a href="#">&nbsp;Unity</a></li>
+                            <li><a href="#">&nbsp;Xcode</a></li>
+                        </ul>
+                    </div>
                 </li>
             </ul>
+                
             <ul class="menu">
                 <li class="menu__single">
-                    <a href="#" class="init-bottom">モデリング</a>
-                    <ul class="menu__second-level">
-                        <li><a href="#">・Blender</a></li>
-                        <li><a href="#">・VRoid</a></li>
-                    </ul>
+                    <div onclick="obj5=document.getElementById('open5').style;
+                    obj5.display=(obj5.display=='none')?'block':'none',
+                    obj1.display=(obj1.display=='block')?'none':'none',
+                    obj2.display=(obj2.display=='block')?'none':'none',
+                    obj3.display=(obj3.display=='block')?'none':'none',
+                    obj4.display=(obj4.display=='block')?'none':'none',
+                    obj6.display=(obj6.display=='block')?'none':'none',
+                    obj7.display=(obj7.display=='block')?'none':'none';">
+                        <a style="cursor:pointer;">
+                            <a href="#" class="init-bottom">モデリング&nbsp;<h20>▽</h20></a>
+                        </a>
+                    </div>
+                    <div id="open5" style="display:none;">    
+                        <ul class="menu__second-level">
+                            <li><a href="#">&nbsp;Blender</a></li>
+                            <li><a href="#">&nbsp;sVRoid</a></li>
+                        </ul>
+                    </div>
                 </li>
             </ul>
+                
             <ul class="menu">
                 <li class="menu__single">
-                    <a href="#" class="init-bottom">実績</a>
-                    <ul class="menu__second-level">
-                    </ul>
+                    <div onclick="obj6=document.getElementById('open6').style;
+                    obj6.display=(obj6.display=='none')?'block':'none',
+                    obj1.display=(obj1.display=='block')?'none':'none',
+                    obj2.display=(obj2.display=='block')?'none':'none',
+                    obj3.display=(obj3.display=='block')?'none':'none',
+                    obj4.display=(obj4.display=='block')?'none':'none',
+                    obj5.display=(obj5.display=='block')?'none':'none',
+                    obj7.display=(obj7.display=='block')?'none':'none';">
+                        <a style="cursor:pointer;">
+                            <a href="#" class="init-bottom">実績</a>
+                        </a>
+                    </div>
+                    <div id="open6" style="display:none;">
+                        <ul class="menu__second-level">
+                        </ul>
+                    </div>
                 </li>
             </ul>
+            
             <ul class="menu">
                 <li class="menu__single">
-                    <a href="#" class="init-bottom">その他</a>
-                    <ul class="menu__second-level">
-                    </ul>
+                    <div onclick="obj7=document.getElementById('open7').style;
+                    obj7.display=(obj7.display=='none')?'block':'none',
+                    obj1.display=(obj1.display=='block')?'none':'none',
+                    obj2.display=(obj2.display=='block')?'none':'none',
+                    obj3.display=(obj3.display=='block')?'none':'none',
+                    obj4.display=(obj4.display=='block')?'none':'none',
+                    obj5.display=(obj5.display=='block')?'none':'none',
+                    obj6.display=(obj6.display=='block')?'none':'none';">
+                        <a style="cursor:pointer;">
+                            <a href="#" class="init-bottom">その他</a>
+                        </a>
+                    </div>
+                    <div id="open7" style="display:none;">    
+                        <ul class="menu__second-level">
+                        </ul>
+                    </div>
                 </li>
+            </ul>
             </ul>
         </nav>
     </header>
@@ -92,27 +190,34 @@
     <div id="wrap">
         <div id="content">
             <section id="web">
-                <p><h7>Webサイト</h7>
+                <p><h14>更新日：2019/07/19</h14>
+                    <br>
+                    <br><h7>【記事の題名】</h7>
                     <br>
                     <br><img src="images/image13.png" alt="web">
                     <br>Unityは、統合開発環境を内蔵し、複数の機材に対応するゲームエンジンである。開発はユニティ・テクノロジーズ。日本法人はユニティテクノロジーズジャパン合同会社。ウェブプラグイン、デスクトッププラットフォーム、ゲーム機、携帯機器向けのコンピュータゲームを開発するために用いる。100万人以上の開発者が利用している。
                     <br><a href="unity.html">続きを読む >></a>
-                    <br><h14>更新日：2019/07/19</h14></p>
+                    <br>
+                </p>
             </section>
-                <p><h8>Unity</h8>
+                <p><h14>更新日：2019/07/19</h14>
+                    <br>
+                    <br><h8>【記事の題名】</h8>
                     <br>
                     <br><img src="images/image14.jpg" alt="unity">
                     <br>Unityは、統合開発環境を内蔵し、複数の機材に対応するゲームエンジンである。開発はユニティ・テクノロジーズ。日本法人はユニティテクノロジーズジャパン合同会社。ウェブプラグイン、デスクトッププラットフォーム、ゲーム機、携帯機器向けのコンピュータゲームを開発するために用いる。100万人以上の開発者が利用している。
                     <br><a href="unity.html">続きを読む >></a>
-                    <br><h14>更新日：2019/07/19</h14></p>
+                </p>
         </div>
 <!--    サイドバー    -->
             <aside class="sidebar">
                 <section class="introduction">
                     <h13>開発者紹介</h13>
+                    <br>
                     <h12>ShowTakes</h12>
+                    <br><img src="images/image11.jpg" alt="logo" class="logo2">
                     <p>iOSアプリ開発をしています。アプリの管理から制作、実装の方法まで情報を公開しています。</p>
-                    <li class="pro">プロフェールを見る</li>
+                    <li class="pro">プロフィール詳細</li>
                     <li class="Q_A">Q&A</li>
                 </section>
                 <section class="sns">
@@ -120,7 +225,20 @@
                     <p>Twiter</p>
                 </section>
             </aside>
-
+        
+        <aside class="sidebar2">
+                <section class="introduction">
+                    <h12>おすすめ記事</h12>
+                </section>
+                <section>
+                    <p class="side2">画像</p>
+                    <br><p class="non">【記事名】</p>
+                </section>
+                <section>
+                    <p class="side2">画像</p>
+                    <br><p class="non">【記事名】</p>
+                </section>
+            </aside>
     </div>
 <!------  ヘッター1  ------>
     <article>
@@ -134,7 +252,7 @@
                 <tr><th class="table">HOME</th><th class="table">Webサイト</th><th class="table">プログラミング</th><th class="table">管理</th><th class="table">ソフト</th><th class="table">モデリング</th><th class="table">実績</th><th class="table">その他</th></tr>
                 <tr><td></td><td>HTML</td><td>C言語</td><td>GIT</td><td>Unity</td><td>Blender</td><td>-</td><td></td></tr>
                 <tr><td></td><td>CSS</td><td>C#</td><td></td><td>Xcode</td><td>VRoid</td><td></td><td></td></tr>
-                <tr><td></td><td>PHP</td><td>Swift</td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>PHP</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
                 <tr><td></td><td>WordPress</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
             </table>
         </footer>
