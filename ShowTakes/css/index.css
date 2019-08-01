@@ -162,6 +162,10 @@ h20 {
     border-bottom: 2px solid #808080;
 }
 
+.program {
+    font-size: 90%;
+}
+
 /* ---------- メニュー ------------------------------------------------------------ */
 /* ---------- コンテンツ ---------- */
 
@@ -178,16 +182,18 @@ h20 {
     float: left;
     font-size: 20px;
     margin: 0px 0px 10px 0px;
-    margin-left: 5%;
+    margin-left: 7%;
     
 }
 
 #content p {
-    padding: 10px 100px 100px 100px;
+    padding: 10px 50px 100px 50px;
     background-color: #ffffff;
-    border: 1px solid #000044;
+    border: 1px solid #ffffff;
     margin-bottom: 100px;
     border-width: 1px 40px;
+    border-left: 40px solid #000044;
+    border-right: 40px solid #000044;
 }
 
 h7 {
@@ -217,11 +223,11 @@ h14 {
     float: right;
     width: 20%;
     padding: 40px 30px;
-    margin-right: 4%;
+    margin-right: 6%;
     background-color: #ffffff;
     font-size: 20px;
     list-style-type: none;
-    border: 1px solid black;
+    border: 1px solid #ffffff;
     margin-top: 20px;
 }
 
@@ -277,11 +283,11 @@ h14 {
     float: right;
     width: 20%;
     padding: 40px 30px;
-    margin-right: 4%;
+    margin-right: 6%;
     background-color: #ffffff;
     font-size: 20px;
     list-style-type: none;
-    border: 1px solid black;
+    border: 1px solid #ffffff;
     margin-top: 6%;
 }
 
@@ -323,12 +329,14 @@ h4 {
 img {
     margin-top: -50px;
 }
+
 /* ---------- フッター　メニュー1 ---------- */
 
 #footer-menu {
     clear: both;
     list-style-type: none;
     border: 1px solid black;
+    background-color: #ffffff;
 }
 
 #footer-menu li {
@@ -351,8 +359,10 @@ article footer {
     text-align: center;
     color: #ffffff;
     padding: 3% 2% 8% 2%;
-    border: 1px solid black;
+    border: 1px solid #ffffff;
     margin: 0.5% 4%;
+    background-color: #ffffff;
+    
 }
 
 .table {
@@ -368,6 +378,8 @@ table {
 table td {
     font-size: 80%;
     padding-bottom: 10px;
+/*    text-align: left;*/
+/*    padding-left: 5%;*/
 }
 
 /* ---------- フッター　メニュー2 ---------- */
